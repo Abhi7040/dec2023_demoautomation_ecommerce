@@ -1,25 +1,20 @@
 package E_Shope_DemoAutomation.AbhishekD.pageObject;
 
-import E_Shope_DemoAutomation.AbhishekD.common.BaseClass;
 
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import E_Shope_DemoAutomation.common.BaseClass;
+import E_Shope_DemoAutomation.utils.log.Log;
 import org.testng.annotations.Test;
 
-
-import java.io.IOException;
-
-public class LoginLogoutPageObject {
-WebDriver driver;
+public class LoginLogoutPageObject extends BaseClass {
+//WebDriver driver;
 @Test
-    public void initialization() throws IOException {
-    WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
-    System.out.println(driver);
-       // driver = BaseClass.init();
+    public void initialization() throws Exception {
+//    WebDriverManager.chromedriver().setup();
+//    driver = new ChromeDriver();
+//    System.out.println(driver);
+         init();
         driver.get("https://automationexercise.com/login");
+    Log.info("Browser lunch");
         driver.manage().window().maximize();
     }
 }
