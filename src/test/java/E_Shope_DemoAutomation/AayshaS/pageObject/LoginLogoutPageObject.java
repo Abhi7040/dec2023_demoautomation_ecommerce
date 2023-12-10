@@ -56,7 +56,7 @@ public class LoginLogoutPageObject extends BaseClass {
             waitForElementVisible(LoginPasswordTextbox);
             LoginPasswordTextbox.sendKeys(properties.getProperty("password"));
             log("Enter Password");
-
+            Thread.sleep(2000);
             clickElement(LoginBtn);
 
 

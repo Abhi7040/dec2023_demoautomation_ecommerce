@@ -1,11 +1,14 @@
 package E_Shope_DemoAutomation.common;
 
 import E_Shope_DemoAutomation.utils.log.Log;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+
+import static E_Shope_DemoAutomation.utils.ExtentReport.ExtentTestManager.startTest;
 
 public class Utility extends BaseClass {
   public static  WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -19,7 +22,7 @@ public class Utility extends BaseClass {
     }
 
     public static void log(String ele){
-
+//        startTest(Status.INFO.name(),ele);
         Log.info(ele);
     }
 

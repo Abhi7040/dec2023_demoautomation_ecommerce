@@ -1,4 +1,4 @@
-package E_Shope_DemoAutomation.AayshaS.pageObjectTest;
+package E_Shope_DemoAutomation.AayshaS.Test;
 
 import E_Shope_DemoAutomation.AayshaS.pageObject.LoginLogoutPageObject;
 import E_Shope_DemoAutomation.common.BaseClass;
