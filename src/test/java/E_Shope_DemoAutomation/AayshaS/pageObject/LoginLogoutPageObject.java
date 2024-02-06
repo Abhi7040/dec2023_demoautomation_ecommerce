@@ -42,6 +42,10 @@ public class LoginLogoutPageObject extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
+//    public LoginLogoutPageObject(int i){
+////        PageFactory.initElements(driver, this);
+//    }
+
     public void loginWithValidCredential(){
         try{
            Thread.sleep(3000);
@@ -58,6 +62,7 @@ public class LoginLogoutPageObject extends BaseClass {
             log("Enter Password");
             Thread.sleep(2000);
             clickElement(LoginBtn);
+            log("Login successfully");
 
 
         }catch (Exception e){

@@ -14,6 +14,7 @@ public class ExtentManager {
         final SimpleDateFormat sdf = new SimpleDateFormat("-yyyy-MM-dd.HH.mm.ss");
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String currenttimestamp =sdf.format(timestamp);
+
 //        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report"+currenttimestamp+".html");
         reporter.config().setReportName("Demo-Ecommerce Extent Report");
